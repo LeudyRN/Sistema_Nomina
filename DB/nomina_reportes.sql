@@ -16,33 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `empleado`
+-- Table structure for table `reportes`
 --
 
-DROP TABLE IF EXISTS `empleado`;
+DROP TABLE IF EXISTS `reportes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `empleado` (
-  `Id` int NOT NULL,
-  `Nombre` varchar(45) NOT NULL,
-  `Apellido` varchar(45) NOT NULL,
-  `Telefono` varchar(45) NOT NULL,
-  `Email` varchar(45) NOT NULL,
-  `Sueldo` mediumtext,
-  `Posicion` varchar(25) NOT NULL,
-  `Fecha_deIngreso` date DEFAULT NULL,
-  `Departamento` varchar(25) DEFAULT NULL,
-  PRIMARY KEY (`Id`)
+CREATE TABLE `reportes` (
+  `idreportes` int NOT NULL AUTO_INCREMENT,
+  `PorEmpleado` varchar(45) NOT NULL,
+  `PorFecha` varchar(45) NOT NULL,
+  `PorDepartamento` varchar(45) NOT NULL,
+  PRIMARY KEY (`idreportes`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `empleado`
+-- Dumping data for table `reportes`
 --
 
-LOCK TABLES `empleado` WRITE;
-/*!40000 ALTER TABLE `empleado` DISABLE KEYS */;
-/*!40000 ALTER TABLE `empleado` ENABLE KEYS */;
+LOCK TABLES `reportes` WRITE;
+/*!40000 ALTER TABLE `reportes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `reportes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -54,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-09 12:18:49
+-- Dump completed on 2022-11-09 12:18:47
