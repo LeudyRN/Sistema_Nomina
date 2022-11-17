@@ -130,6 +130,9 @@ public class Page2 extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        jTextField1.setEditable(false);
+        jTextField1.setEnabled(false);
+
         jPanel5.setBackground(new java.awt.Color(0, 153, 0));
 
         jLabel12.setFont(new java.awt.Font("Roboto", 1, 12)); // NOI18N

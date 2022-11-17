@@ -5,7 +5,8 @@
 package com.Sistema_deNomina;
 
 import java.awt.Color;
-
+import javax.swing.table.DefaultTableModel;
+import java.sql.ResultSet;
 /**
  *
  * @author Leudy
@@ -17,6 +18,11 @@ public class Page4 extends javax.swing.JPanel {
      */
     public Page4() {
         initComponents();
+    }
+    
+    private void mostrar(){
+    
+    
     }
 
     /**
@@ -42,7 +48,7 @@ public class Page4 extends javax.swing.JPanel {
         jLabel7 = new javax.swing.JLabel();
         jTextField5 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        Table = new javax.swing.JTable();
         jPasswordField1 = new javax.swing.JPasswordField();
         jPanel3 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
@@ -122,7 +128,7 @@ public class Page4 extends javax.swing.JPanel {
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        Table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -130,7 +136,7 @@ public class Page4 extends javax.swing.JPanel {
                 "idUsuario", "Nombre_deUsuario", "Email", "Contraseña", "Rol"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(Table);
 
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -344,6 +350,7 @@ public class Page4 extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable Table;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -361,7 +368,6 @@ public class Page4 extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
