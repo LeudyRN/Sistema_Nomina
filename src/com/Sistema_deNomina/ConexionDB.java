@@ -12,6 +12,7 @@ package com.Sistema_deNomina;
  */
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -24,6 +25,8 @@ public class ConexionDB {
     public Connection conexion;
     public Statement sentencia;
     public ResultSet resultado;
+    
+    
 
     public void ConectarBasedeDatos() {
         try {
@@ -35,6 +38,7 @@ public class ConexionDB {
         } catch (ClassNotFoundException | SQLException ex) {
             JOptionPane.showMessageDialog(null, ex.getMessage(), "Error ", JOptionPane.ERROR_MESSAGE);
         }
+        
     }
 
     public void DesconectarBasedeDatos() {
@@ -54,5 +58,9 @@ public class ConexionDB {
     public Connection getConnection() {
         return conexion;
     }
-}
+        
+    
+  }
+            
+
 
